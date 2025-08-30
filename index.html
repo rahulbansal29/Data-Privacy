@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cryptography Master Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="identity.html">🆔 Identity</a>
+  <a href="privacy.html">🛡️ Privacy</a>
+  <a href="signatures.html">📜 Signatures</a>
+  <a href="zkp.html">🔍 ZKP</a>
+  <a href="mixing.html">🔄 Mixing</a>
+  <a href="encryption.html">🔒 Encryption</a>
+  <a href="primitives.html">⚙️ Primitives</a>
+  <a href="keys.html">🔑 Keys</a>
+  <a href="protocols.html">🌐 Protocols</a>
+  <a href="applications.html">⚡ Applications</a>
+  <a href="flowchart.html">🗺️ Flowchart</a>
+</nav>
+<header>
+  <h1>🔐 Cryptography Master Guide</h1>
+  <p>Learn Privacy, Security & Real-World Applications</p>
+</header>
+<div class="hero" id="hero">
+  <div class="slide"><h2>Welcome to Cryptography</h2><p>The art of secure communication</p></div>
+  <div class="slide"><h2>Privacy & Anonymity</h2><p>Stay hidden while proving authenticity</p></div>
+  <div class="slide"><h2>Real-World Applications</h2><p>Banking, messaging, voting, blockchain</p></div>
+</div>
+<script>
+const slides=document.querySelectorAll(".slide");let idx=0;
+setInterval(()=>{idx=(idx+1)%slides.length;
+slides.forEach((s,i)=>s.style.transform=`translateX(${100*(i-idx)}%)`);},3000);
+</script>
+</body>
+</html>
