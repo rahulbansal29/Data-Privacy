@@ -50,6 +50,21 @@ nav a:hover {
   color: #000;
 }
 
+
+#application {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+#application:hover  {
+  background: var(--accent);
+  color: #000;
+}
+
+
 /* ================================
    Header / Hero Section
    ================================ */

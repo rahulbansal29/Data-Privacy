@@ -1,15 +1,72 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Identity & Credentials</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<nav> <a href="identityapplication.html"> application </a></nav>
-<header><h1>🆔 Identity & Credentials</h1></header>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+  <h1>🆔 Identity & Credentials</h1>
+</header>
+
 <section>
-<div class="card"><h2>Centralized vs Decentralized</h2>
-<p>Centralized identity: managed by one authority (like govt ID).</p>
-<p>Decentralized identity (DID): user controls identity, often blockchain-based.</p></div>
-<div class="card"><h2>Credentials</h2>
-<p>Roles: Issuer, Holder, Verifier.</p>
-<p>Types: Knowledge (password), Possession (token), Inherence (biometrics).</p></div>
+  <!-- Identity Section -->
+  <div class="card">
+    <h2>Identity In Modern Cryptography</h2>
+    <p>
+      In cryptography, <strong>identity</strong> refers to the assurance of “who” is participating in a 
+      communication or transaction. It is the root of <em>authentication</em> and 
+      <em>non-repudiation</em>.
+    </p>
+    <ul>
+      <li><strong>Digital Identity:</strong> A representation of an entity (person, organization, device, or process) in digital form.</li>
+      <li><strong>Key Binding:</strong> Usually linked to cryptographic material such as public/private keys.</li>
+      <li><strong>Trust Without Presence:</strong> Enables trust in digital systems without needing physical presence.</li>
+    </ul>
+    <h3>Forms of Identity</h3>
+    <ul>
+      <li><strong>Centralized Identity:</strong> Managed by one authority (like government-issued IDs, Certificate Authorities).</li>
+      <li><strong>Federated Identity:</strong> Shared across organizations (e.g., “Login with Google”).</li>
+      <li><strong>Decentralized Identity (DID):</strong> User controls their own identity, often blockchain-based.</li>
+    </ul>
+  </div>
+
+  <a id="application" href="identityapplication.html"> Application </a>
+
+  <!-- Credentials Section -->
+  <div class="card">
+    <h2>Credentials</h2>
+    <p>
+      <strong>Credentials</strong> are proofs tied to identity that allow secure access, authorization, 
+      or trust in digital systems.
+    </p>
+    <h3>Roles</h3>
+    <ul>
+      <li><strong>Issuer:</strong> Entity that provides credentials (e.g., a government or CA).</li>
+      <li><strong>Holder:</strong> The person or device that stores credentials.</li>
+      <li><strong>Verifier:</strong> Entity that checks the validity of credentials.</li>
+    </ul>
+    <h3>Types of Credentials</h3>
+    <ul>
+      <li><strong>Knowledge:</strong> Something you know (password, PIN).</li>
+      <li><strong>Possession:</strong> Something you have (smart card, hardware token).</li>
+      <li><strong>Inherence:</strong> Something you are (biometrics like fingerprint, iris).</li>
+    </ul>
+    <h3>Modern Cryptographic Credentials</h3>
+    <ul>
+      <li><strong>Certificates:</strong> Bind public keys to identities (X.509).</li>
+      <li><strong>Verifiable Credentials:</strong> W3C standard for secure, shareable claims.</li>
+      <li><strong>Tokens:</strong> JWTs, OAuth tokens, hardware-based tokens.</li>
+      <li><strong>Anonymous Credentials:</strong> Prove rights without revealing full identity.</li>
+    </ul>
+  </div>
+  <a id="application" href="credentialsapplication.html"> Application </a>
 </section>
-</body></html>
+
+</body>
+</html>
+
