@@ -1,12 +1,51 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy & Anonymity</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<nav>... (same links) ...</nav>
-<header><h1>🛡️ Privacy & Anonymity</h1></header>
+<title>Privacy in Cryptography</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔒 Privacy in Cryptography</h1>
+</header>
+
 <section>
-<div class="card"><h2>Privacy Coins</h2><p>Monero (ring signatures, stealth), Zcash (zk-SNARK shielded tx).</p></div>
-<div class="card"><h2>Transaction Privacy</h2><p>Stealth addresses, RingCT, confidential transactions.</p></div>
-<div class="card"><h2>Network Privacy</h2><p>VPN, TOR, IPSec hide metadata & IP addresses.</p></div>
+  <div class="card">
+    <h2>1. Concept</h2>
+    <p>
+      <strong>Privacy</strong> in cryptography means protecting the <em>content</em> of information 
+      so that only authorized parties can access it.
+    </p>
+    <ul>
+      <li>Ensures that even if data is intercepted, it cannot be understood by unauthorized entities.</li>
+      <li><strong>👉 In other words:</strong> <em>Privacy = Control over “what information” is revealed and “to whom.”</em></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2. How Cryptography Achieves Privacy</h2>
+    <ul>
+      <li>
+        <strong>Encryption:</strong>
+        <ul>
+          <li>🔑 <strong>Symmetric:</strong> AES, ChaCha20 → Fast, same key for encryption & decryption.</li>
+          <li>🔐 <strong>Asymmetric:</strong> RSA, ECC → Uses public/private key pairs.</li>
+        </ul>
+      </li>
+      <li><strong>Secure Channels:</strong> Protocols like TLS/SSL ensure private communication on the internet.</li>
+      <li><strong>Homomorphic Encryption:</strong> Enables computation on encrypted data without exposing its content.</li>
+      <li><strong>Differential Privacy:</strong> Hides individual data while still allowing aggregate analysis.</li>
+    </ul>
+  </div>
+    <a id="application" href="privacyapplication.html"> Application </a>
+
 </section>
-</body></html>
+
+    
+
+
+</body>
+</html>
